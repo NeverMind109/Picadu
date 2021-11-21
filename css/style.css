@@ -304,10 +304,19 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: "SFProDisplay-Regular";
+  src: local("SFProDisplay-Regular"), url("../fonts/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: "SFProDisplay-Semibold";
+  src: local("SFProDisplay-Semibold"), url("../fonts/SFProDisplay-Semibold.woff") format("woff"), url("../fonts/SFProDisplay-Semibold.woff2") format("woff2");
+  font-weight: bold; }
 * {
   box-sizing: border-box; }
 
 body {
+  font-family: "SFProDisplay-Regular", sans-serif;
   background: #E5E5E5; }
 
 .container {
@@ -405,9 +414,9 @@ body {
   .post-body {
     padding: 35px 35px 0; }
   .post__title {
+    font-family: "SFProDisplay-Semibold", sans-serif;
     margin: 0;
     font-style: normal;
-    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: #262626; }
@@ -509,8 +518,8 @@ body {
     .sidebar__avatar--margin {
       margin-right: 17px; }
   .sidebar__name {
+    font-family: "SFProDisplay-Semibold", sans-serif;
     font-style: normal;
-    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: #595959; }
@@ -576,18 +585,18 @@ body {
       border-bottom: 1px solid #E8E8E8;
       padding: 23px 25px; }
     .sidebar-card__title {
+      font-family: "SFProDisplay-Semibold", sans-serif;
       margin: 0;
       font-style: normal;
-      font-weight: 600;
       font-size: 16px;
       line-height: 24px;
       color: #595959; }
     .sidebar-card__body {
       padding: 22px 40px 20px 25px; }
     .sidebar-card__theme-title {
+      font-family: "SFProDisplay-Semibold", sans-serif;
       text-decoration: none;
       font-style: normal;
-      font-weight: 600;
       font-size: 16px;
       line-height: 24px;
       color: #D48806;

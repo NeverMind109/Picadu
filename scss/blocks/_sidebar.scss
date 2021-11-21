@@ -22,8 +22,8 @@
         }
     }
     &__name {
+        font-family: "SFProDisplay-Semibold", sans-serif;
         font-style: normal;
-        font-weight: 600;
         font-size: 16px;
         line-height: 24px;
         color: #595959;
@@ -108,9 +108,9 @@
             padding: 23px 25px;
         }
         &__title {
+            font-family: "SFProDisplay-Semibold", sans-serif;
             margin: 0;
             font-style: normal;
-            font-weight: 600;
             font-size: 16px;
             line-height: 24px;
             color: #595959;
@@ -119,9 +119,9 @@
             padding: 22px 40px 20px 25px;
         }
         &__theme-title {
+            font-family: "SFProDisplay-Semibold", sans-serif;
             text-decoration: none;
             font-style: normal;
-            font-weight: 600;
             font-size: 16px;
             line-height: 24px;
             color: #D48806;
