@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pikadu</title>
+    <title>Pikadu - Главная</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,23 +14,30 @@
                 <a href="index.html" class="header__logo">
                     <img src="img/logo.svg" alt="Logo: Pikadu" class="header__image">
                 </a>
-                <ul class="header__nav nav">
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Свежее </a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Лучшее</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Горячее</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Подписки</a></li>
-                </ul>
+                <nav class="header__nav header__nav--margin">
+                    <ul class="header__menu">
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Свежее </a></li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Лучшее</a></li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Горячее</a></li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Подписки</a></li>
+                    </ul>
+                </nav>
                 <div class="header__search-block">
                     <input type="search" class="header__input" placeholder="Поиск по сайту">
                     <button class="header__search-button">
                         <img src="img/search.svg" alt="Logo: Search" class="header__search-image">
                     </button>
                 </div>
+                <a href="#" class="header__menu-toggle header__menu-toggle--margin" id="menu-toggle">
+                    <span class="header__menu-element"></span>
+                    <span class="header__menu-element"></span>
+                    <span class="header__menu-element"></span>
+                </a>
             </div>
         </div>
     </header>
     <div class="container">
-        <div class="content">
+        <div class="content content--margin">
             <main class="content__posts">
                 <section class="post post--margin">
                     <div class="post-body">
@@ -70,7 +77,7 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="post__author">
+                        <div class="post__author post__author--margin">
                             <div class="post__author-about">
                                 <a href="#" class="post__author-name">Mira Bernal</a>
                                 <span class="post__time">5 минут назад</span>
@@ -118,7 +125,7 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="post__author">
+                        <div class="post__author post__author--margin">
                             <div class="post__author-about">
                                 <a href="#" class="post__author-name">Alaina Montgomery</a>
                                 <span class="post__time">40 минут назад</span>
@@ -166,7 +173,7 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="post__author">
+                        <div class="post__author post__author--margin">
                             <div class="post__author-about">
                                 <a href="#" class="post__author-name">Cody Carey</a>
                                 <span class="post__time">3 часа назад</span>
@@ -221,5 +228,6 @@
             </aside>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
