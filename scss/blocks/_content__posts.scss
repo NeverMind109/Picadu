@@ -1,0 +1,124 @@
+.content__posts {
+    width: 90%;
+    max-width: 800px;
+}
+.post {
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    &--margin {
+        margin-bottom: 30px;
+    }
+    &-body {
+        padding: 35px 35px 0;
+    }
+    &__title {
+        margin: 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: $post-color;
+        &--margin {
+            margin-bottom: 19px;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: $post-color;
+    }
+    &__tags {
+        &--margin {
+            margin-bottom: 22px;
+        }
+
+    }
+    &__tag {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: $secondary-gray-color;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+    &-footer {
+        background-color: #FAFAFA;
+        border-top: 1px solid #E8E8E8;
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 35px;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+    &__button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: $primary-gray-color;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &--margin:not(:last-child) {
+            margin-right: 19px;
+        }
+    }
+    &__icon {
+        fill: $primary-gray-color;
+    }
+    &__author {
+        display: flex;
+        align-items: center;
+        &-about {
+            display: block;
+            text-align: right;
+        }
+        &-name {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 20px;
+            color: $primary-gray-color;
+        }
+    }
+    &__time {
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: right;
+        color: $secondary-gray-color;
+    }
+    &__author{
+        &-avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 4px;
+        }
+        &-link {
+            &--margin {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.counter {
+    &--margin {
+        margin-left: 6px;
+    }
+}
+.div {
+    max-width: 300px;
+}

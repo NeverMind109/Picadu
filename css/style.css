@@ -306,6 +306,9 @@ template {
 * {
   box-sizing: border-box; }
 
+body {
+  background: #E5E5E5; }
+
 .container {
   max-width: 1200px;
   margin: 0 auto; }
@@ -314,6 +317,8 @@ template {
   background-color: #FA8C16;
   padding: 16px 0;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15); }
+  .header--margin {
+    margin-bottom: 30px; }
   .header-wrapper {
     width: 90%;
     display: flex;
@@ -371,5 +376,104 @@ template {
 .nav {
   margin-left: 60px;
   margin-right: auto; }
+
+.content {
+  width: 90%; }
+
+.content__posts {
+  width: 90%;
+  max-width: 800px; }
+
+.post {
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8; }
+  .post--margin {
+    margin-bottom: 30px; }
+  .post-body {
+    padding: 35px 35px 0; }
+  .post__title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #262626; }
+    .post__title--margin {
+      margin-bottom: 19px; }
+  .post__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626; }
+  .post__tags--margin {
+    margin-bottom: 22px; }
+  .post__tag {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #BFBFBF; }
+    .post__tag:not(:last-child) {
+      margin-right: 10px; }
+  .post-footer {
+    background-color: #FAFAFA;
+    border-top: 1px solid #E8E8E8;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 35px; }
+  .post__buttons {
+    display: flex;
+    align-items: center; }
+  .post__button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: #8C8C8C;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+    .post__button--margin:not(:last-child) {
+      margin-right: 19px; }
+  .post__icon {
+    fill: #8C8C8C; }
+  .post__author {
+    display: flex;
+    align-items: center; }
+    .post__author-about {
+      display: block;
+      text-align: right; }
+    .post__author-name {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      color: #8C8C8C; }
+  .post__time {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: right;
+    color: #BFBFBF; }
+  .post__author-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 4px; }
+  .post__author-link--margin {
+    margin-left: 10px; }
+
+.counter--margin {
+  margin-left: 6px; }
+
+.div {
+  max-width: 300px; }
 
 /*# sourceMappingURL=style.css.map */

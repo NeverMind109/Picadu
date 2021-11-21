@@ -2,6 +2,9 @@
     background-color: #FA8C16;
     padding: 16px 0;
     box-shadow: (0px 2px 8px rgba(0, 0, 0, 0.15));
+    &--margin {
+        margin-bottom: 30px;
+    }
     &-wrapper {
         width: 90%;
         display: flex;
@@ -46,10 +49,10 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 22px;
-        color: #BFBFBF;
+        color: $secondary-gray-color;
         border: none;
         &::placeholder {
-            color: #BFBFBF;
+            color: $secondary-gray-color;
         }
     }
     &__search-button {
