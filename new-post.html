@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikadu - Новый пост</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header header--margin">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo.svg" alt="Logo: Pikadu" class="header__image">
+                </a>
+                <nav class="header__nav header__nav--margin">
+                    <ul class="header__menu">
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Свежее </a></li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Лучшее</a></li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Горячее</a></li>
+                        <li class="header__menu-item"><a href="#" class="header__menu-link">Подписки</a></li>
+                    </ul>
+                </nav>
+                <div class="header__search-block">
+                    <input type="search" class="header__input" placeholder="Поиск по сайту">
+                    <button class="header__search-button">
+                        <img src="img/search.svg" alt="Logo: Search" class="header__search-image">
+                    </button>
+                </div>
+                <a href="#" class="header__menu-toggle header__menu-toggle--margin" id="menu-toggle">
+                    <span class="header__menu-element"></span>
+                    <span class="header__menu-element"></span>
+                    <span class="header__menu-element"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content content--margin">
+            <main class="content__new-post">
+                <form action="#" class="content__add-new-post">
+                    <input type="text" name="post-title" placeholder="Заголовок поста" class="content__add-title content__add-title--margin">
+                    <textarea name="post-text" id="text" placeholder="Текст вашего поста" class="content__add-text content__add-text--margin"></textarea>
+                    <div class="content__add-buttons">
+                        <button class="button content__add-post" type="submit">
+                            <svg class="content__add-post-icon content__add-post-icon--margin" width="16px" height="16px">
+                                <use xlink:href="img/icons.svg#public"></use>
+                            </svg>
+                            Опубликовать пост
+                        </button>
+                        <button class="button content__upload-video button content__upload-video--margin">
+                            <svg class="content__upload-video-icon content__upload-video-icon--margin" width="14px" height="11px">
+                                <use xlink:href="img/icons.svg#video"></use>
+                            </svg>
+                            Видео
+                        </button>
+                        <button class="button content__upload-photo">
+                            <svg class="content__upload-photo-icon content__upload-photo-icon--margin" width="14px" height="11px">
+                                <use xlink:href="img/icons.svg#photo"></use>
+                            </svg>
+                            Фото
+                        </button>
+                    </div>
+                </form>
+            </main>
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <a href="#" class="sidebar__user">
+                        <img src="img/avatar-4.jpg" alt="Image: Avatar" class="sidebar__avatar sidebar__avatar--margin" width="40px" height="40px">
+                        <span class="sidebar__name">Braden Wiley</span>
+                    </a>
+                    <button class="sidebar__exit-button">
+                        <svg class="sidebar__icon" width="21px" height="21px">
+                            <use xlink:href="img/icons.svg#exit"></use>
+                          </svg>
+                    </button>
+                </div>
+                <nav class="sidebar-navigation">
+                    <ul class="sidebar__menu">
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Ответы</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Комментарии</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Оценки</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Сохраненное</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Подписки</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Заметки</a></li>
+                        <li class="sidebar__item"><a href="#" class="sidebar__link">Игнор-лист</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="sidebar__promo sidebar__promo--margin"></a>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

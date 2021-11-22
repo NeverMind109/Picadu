@@ -325,13 +325,15 @@ body {
   margin: 0 auto; }
 
 .button {
+  border: none;
   border-radius: 4px;
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  padding: 13px; }
+  padding: 13px;
+  cursor: pointer; }
 
 .header {
   background-color: #FA8C16;
@@ -631,6 +633,55 @@ body {
       text-align: center;
       color: #FFFFFF; }
 
+.content__new-post {
+  width: 67%; }
+.content__add-new-post {
+  display: flex;
+  flex-direction: column; }
+.content__add-title, .content__add-text {
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  font-style: normal;
+  font-weight: normal;
+  padding: 23px 30px; }
+  .content__add-title--margin, .content__add-text--margin {
+    margin-bottom: 16px; }
+.content__add-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000; }
+.content__add-text {
+  min-height: 362px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+  resize: none; }
+.content__add-post {
+  max-width: 370px;
+  width: 100%;
+  background: #FAAD14;
+  color: #FFFFFF; }
+  .content__add-post-icon {
+    width: 16px;
+    height: 16px;
+    fill: #FFFFFF; }
+    .content__add-post-icon--margin {
+      margin-right: 10px; }
+.content__upload-video, .content__upload-photo {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+  background: #fff;
+  border: 1px solid #FFC53D;
+  background: #FFFFFF;
+  color: #FAAD14; }
+  .content__upload-video-icon, .content__upload-photo-icon {
+    fill: #FFC53D;
+    width: 14px;
+    height: 11px; }
+    .content__upload-video-icon--margin, .content__upload-photo-icon--margin {
+      margin-right: 5px; }
+.content__upload-video--margin {
+  margin: 0 1% 0 2%; }
+
 @media (max-width: 990px) {
   .header {
     position: fixed;
@@ -660,8 +711,9 @@ body {
   .content--margin {
     margin-top: 94px;
     margin-bottom: 60px; }
-
   .content__posts {
+    width: 100%; }
+  .content__new-post {
     width: 100%; }
 
   .sidebar {
@@ -681,6 +733,14 @@ body {
     overflow-y: auto; }
     .sidebar--visible {
       transform: translateX(0); } }
+@media (max-width: 660px) {
+  .content__add-buttons {
+    display: flex;
+    flex-direction: column; }
+  .content__add-post {
+    max-width: 100%; }
+  .content__upload-video--margin {
+    margin: 10px 0 10px 0; } }
 @media (max-width: 576px) {
   .post-footer {
     flex-direction: column; }

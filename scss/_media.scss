@@ -34,9 +34,12 @@
             margin-top: 94px;
             margin-bottom: 60px;
         }
-    }
-    .content__posts {
-        width: 100%;
+        &__posts {
+            width: 100%;
+        }
+        &__new-post {
+            width: 100%;
+        }
     }
     .sidebar {
         position: fixed;
@@ -55,6 +58,26 @@
         overflow-y: auto;
         &--visible {
             transform: translateX(0);
+        }
+    }
+}
+@media (max-width: 660px) {
+    .content {
+        &__add {
+            &-buttons {
+                display: flex;
+                flex-direction: column;
+            }
+            &-post {
+                max-width: 100%;
+            }
+        }
+        &__upload {
+            &-video {
+                &--margin {
+                    margin: 10px 0 10px 0;
+                }
+            }
         }
     }
 }
