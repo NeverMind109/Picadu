@@ -44,6 +44,12 @@
         &:not(:last-child) {
             margin-right: 10px;
         }
+        &:hover {
+            color: #FAAD14;
+        }
+        &:active {
+            color: #000;
+        }
     }
     &-footer {
         background-color: #FAFAFA;
@@ -72,6 +78,32 @@
             margin-right: 19px;
         }
     }
+    &__like {
+        &:hover .post__icon-like {
+            fill: #FAAD14;
+        }
+        &:hover .post__like-counter {
+            color: #FAAD14;
+        }
+    }
+    &__comment {
+        &:hover .post__icon-comment {
+            fill: #FAAD14;
+        }
+        &:hover .post__comment-counter {
+            color: #FAAD14;
+        }
+    }
+    &__save {
+        &:hover .post__icon-save {
+            fill: #FAAD14;
+        }
+    }
+    &__share {
+        &:hover .post__icon-share {
+            fill: #FAAD14;
+        }
+    }
     &__icon {
         fill: $primary-gray-color;
     }
@@ -89,6 +121,9 @@
             font-size: 12px;
             line-height: 20px;
             color: $primary-gray-color;
+            &:hover {
+                color: #000;
+            }
         }
     }
     &__time {
